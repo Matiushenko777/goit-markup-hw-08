@@ -1,0 +1,31 @@
+.about {
+    padding-bottom: 94px;
+}
+.about-title {
+    @include font(700, 36px, 1.17, 0.03em);
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--first--title-color)
+}
+.about-list {
+    display: flex;
+    justify-content: space-between;
+}
+.about-list-item {
+    position: relative; 
+}
+.about-text {
+    @include font(700, 14px, 1.33, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(47, 48, 58, 0.8);
+}

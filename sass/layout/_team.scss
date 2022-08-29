@@ -1,0 +1,66 @@
+.team {
+    background-color: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.team-list-info {
+    border-radius: 0px 0px 4px 4px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px
+     rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+     @include tablet {
+        width: calc((100% - 30px)/2);
+    }
+    @include desktop {
+        width: calc((100% - 90px)/4);
+    }
+}
+.team-soc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px; 
+}
+.team-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
+    transition-property: fill, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    background-color: #2196F3;
+    fill: #FFFFFF;
+    }
+}
+.team-title {
+    @include font(700, 28px, 1.18, 0.03em);
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--first--title-color)
+}
+.team-list-name {
+    @include font(500, 16px, 1.19, 0.03em);
+    padding-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #212121;
+}
+.team-list-item {
+    @include font(400, 16px, 1.19, 0.03em);
+    margin-bottom: 16px;
+    text-align: center;
+    color: #757575;
+    
+}

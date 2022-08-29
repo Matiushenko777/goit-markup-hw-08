@@ -1,0 +1,88 @@
+.hero {
+    background-color: #2F303A;
+    padding: 118px 60px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ), url(../img/hero-bg-mob.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @include retina {
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ), url(../img/hero-bg-mob-2x.jpg);
+    }
+    @include mobile {
+        max-width: 100%;
+    }
+    @include tablet {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+    ), url(../img/hero-bg-tab.jpg);
+        padding: 118px 204px;
+        @include retina {
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ), url(../img/hero-bg-tab-2x.jpg);
+    }
+    }
+    @include desktop {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+    ), url(../img/hero-bg-desk.jpg);
+        width: 100%;
+        padding: 200px;  
+        @include retina {
+        background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ), url(../img/hero-bg-desk-2x.jpg);
+    }
+    }
+}
+.hero-title {
+    @include font(900, 12px, 1.6, 0.06em);
+    display: block;
+    margin: 0 auto;
+    max-width: 696px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    @include mobile {
+        font-size: 26px;
+        min-width: 360px;
+    }
+    @include tablet {
+        font-size: 26px;
+    }
+    @include desktop{
+        font-size: 44px;
+        line-height: 1.36;
+    }
+    color: var(--second--title-color) 
+}
+.hero-btn {
+    @include font(700, 11px, 1.9, 0.06em);
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 32px;
+    border-width: 0; 
+    margin: auto;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: inherit;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #2196F3;
+    @include mobile {
+        font-size: 16px;
+    }
+    color: var(--second--btn-color)
+}

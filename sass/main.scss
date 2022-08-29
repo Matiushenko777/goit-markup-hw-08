@@ -1,0 +1,24 @@
+@import './utils/vars';
+
+@import './base/reset.scss';
+@import './base/common';
+
+@import './utils/hidden';
+@import './utils/mixins';
+
+@import './components/container';
+@import './components/modal';
+ 
+ @import './layout/header';
+ @import './layout/hero';
+ @import './layout/benefits';
+ @import './layout/about';
+ @import './layout/team';
+ @import './layout/album';
+ @import './layout/client';
+ @import './layout/footer';
+ @import './layout/footer__connect';
+ @import './layout/footer__mail';
+ 
+ 
+ 

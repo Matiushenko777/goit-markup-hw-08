@@ -1,0 +1,62 @@
+.logo {
+    @include font(700, 26px, 1.19, 0.03em);
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    color: #2196F3;
+    text-decoration: none;
+}
+.end {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A
+}
+.contacts__list {
+    font-style: normal;
+}
+.contacts__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.contacts__map {
+    @include font(400, 14px, 1.7, 0.03em);
+    color: #FFFFFF;
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+        color: #2196F3;
+    }
+}
+.contacts__mail {
+    @include font(400, 14px, 1.7, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, 
+    &:focus {
+    color: #2196F3;
+    }
+}
+.contacts__tel {
+    @include font(400, 14px, 1.7, 0.03em);
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, 
+    &:focus {
+    color: #2196F3;
+    }
+}
+.logo__logoColor {
+    color: #FFFFFF;
+}
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
