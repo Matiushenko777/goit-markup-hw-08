@@ -156,25 +156,72 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
                 </ul>
             </div>
         </section>
-        <!-- <section class="about">
+        <section class="about">
             <div class="container">
             <h2 class="about-title">Чим ми займаємося</h2>
             <ul class="about-list">
-                <li class="about-list-item"><img src="./img/image1.jpg" alt="компьютер1">
+                <li class="about-list-item">
+                    <picture>
+                        <source 
+                        srcset="./img/desktop-desk-1x.jpg 1x,
+                                ./img/desktop-desk-1x.jpg 2x"
+                                media="(min-width: 1200px)"
+                                >
+                    </picture>
+                    <img src="./img/desktop-desk-1x.jpg" alt="компьютер1">
                 <p class="about-text">Десктопні додатки</p></li>
-                <li class="about-list-item"><img src="./img/image2.jpg" alt="компьютер2">
+                <li class="about-list-item">
+                    <picture>
+                        <source
+                          srcset="./img/mobile-desk-1x.jpg 1x,
+                                  ./img/mobile-desk-2x.jpg 2x"
+                          media="(min-width: 768px)"
+                        />
+                        <img src="../img/mobile-desk-1x.jpg" alt="компьютер2" />
+                      </picture>
                 <p class="about-text">Мобільні додатки</p></li>
-                <li class="about-list-item"><img src="./img/image3.jpg" alt="компьютер3">
+                <li class="about-list-item">
+                    <picture>
+                        <source
+                          srcset="./img/tab-desk-1x.jpg 1x,
+                                  ./img/tab-desk-2x.jpg 2x"
+                          media="(min-width: 768px)"
+                        />
+                        <img src="./img/tab-desk-1x.jpg" alt="компьютер3" />
+                      </picture>
                 <p class="about-text">Дизайнерські рішення</p></li>
             </ul>
-           
         </div>
-        </section> -->
-        <!-- <section class="team">
+        </section>
+        <section class="team">
             <div class="container">
             <h2 class="team-title">Наша команда</h2>
             <ul class="team-list">
-                <li class="team-list-info"><img src="./img/img.jpg" width="260" height="270" alt="сотрудник1">
+                <li class="team-list-info">
+                    <picture>
+                        <source
+                          srcset="
+                            ./img/igor-desk-1x.jpg 1x,
+                            ./img/igor-desk-2x.jpg 2x
+                          "
+                          media="(min-width: 1200px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/igor-tab-1x.jpg 1x,
+                            ./img/igor-tab-2x.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/igor-mob-1x.jpg 1x,
+                            ./img/igor-mob-2x.jpg 2x
+                          "
+                          media="(max-width: 767px)"
+                        />
+                        <img src="./img/igor-tab-1x.jpg" alt="Ігор" />
+                      </picture>
                     <h3 class="team-list-name">Игорь Демьяненко</h3>
                     <p class="team-list-item">Product Designer</p>
                     <ul class="team-soc list">
@@ -200,7 +247,31 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
                         </a></li>
                     </ul>
                 </li>
-                <li class="team-list-info">  <img src="./img/img-2.jpg" width="260" height="270" alt="сотрудник2">
+                <li class="team-list-info">  
+                    <picture>
+                        <source
+                          srcset="
+                            ./img/olga-desk-1x.jpg 1x,
+                            ./img/olga-desk-2x.jpg 2x
+                          "
+                          media="(min-width: 1200px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/olga-tab-1x.jpg 1x,
+                            ./img/olga-tab-2x.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/olga-mob-1x.jpg 1x,
+                            ./img/olga-mob-2x.jpg 2x
+                          "
+                          media="(max-width: 767px)"
+                        />
+                        <img src="./img/olga-mob-1x.jpg" alt="Ольга" />
+                      </picture>
                     <h3 class="team-list-name">Ольга Репина</h3>
                     <p class="team-list-item">Frontend Developer</p>
                     <ul class="team-soc list">
@@ -225,7 +296,31 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
                             </svg>
                         </a></li>
                     </ul></li>
-                <li class="team-list-info"><img src="./img/img-3.jpg" width="260" height="270" alt="сотрудник3">
+                <li class="team-list-info">
+                    <picture>
+                        <source
+                          srcset="
+                            ./img/mykola-desk-1x.jpg 1x,
+                            ./img/mykola-desk-2x.jpg 2x
+                          "
+                          media="(min-width: 1200px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/mykola-tab-1x.jpg 1x,
+                            ./img/mykola-tab-2x.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/mykola-mob-1x.jpg 1x,
+                            ./img/mykola-mob-2x.jpg 2x
+                          "
+                          media="(max-width: 767px)"
+                        />
+                        <img src="./img/mykola-mob-1x.jpg" alt="Микола" />
+                      </picture>
                     <h3 class="team-list-name">Николай Тарасов</h3>
                     <p class="team-list-item">Marketing</p>
                     <ul class="team-soc list">
@@ -250,7 +345,31 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
                             </svg>
                         </a></li>
                     </ul></li>
-                <li class="team-list-info"> <img src="./img/img-4.jpg" width="260" height="270" alt="сотрудник4">
+                <li class="team-list-info"> 
+                    <picture>
+                        <source
+                          srcset="
+                            ./img/mykhaylo-desk-1x.jpg 1x,
+                            ./img/mykhaylo-desk-2x.jpg 2x
+                          "
+                          media="(min-width: 1200px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/mykhaylo-tab-1x.jpg 1x,
+                            ./img/mykhaylo-tab-2x.jpg 2x
+                          "
+                          media="(min-width: 768px)"
+                        />
+                        <source
+                          srcset="
+                            ./img/mykhaylo-mob-1x.jpg 1x,
+                            ./img/mykhaylo-mob-2x.jpg 2x
+                          "
+                          media="(max-width: 767px)"
+                        />
+                        <img src="./img/mykhaylo-mob-1x.jpg" alt="Михайло" />
+                      </picture>
                     <h3 class="team-list-name">Михаил Ермаков</h3>
                     <p class="team-list-item">UI Designer</p>
                     <ul class="team-soc list">
@@ -277,8 +396,8 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
                     </ul></li>
             </ul>
         </div>
-        </section> -->
-       <!-- <section class="client">
+        </section>
+       <section class="client">
         <div class="container">
         <h2 class="regular-client">Постійні клієнти</h2>
         <ul class="client-soc list">
@@ -316,8 +435,9 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
         </ul>
     </div>
        </section>
-    </main> -->
-    <!-- <footer class="end">
+    </main>
+    <footer class="end">
+        <div class="width-1200">
         <div class="footer-container container">
         <div class="contact-wrap">
             <address class="contacts"> 
@@ -360,6 +480,7 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
                 </li>
             </ul>
         </div>
+    </div>
         <div class="mail footer__mail">
             <p class="mail__text">Підпишіться на розсилку</p>
             <form class="mail__form">
@@ -378,7 +499,7 @@ integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8
         </form>
         </div>
     </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
     <button type="button" class="modal-close" data-modal-close>

@@ -1,3 +1,8 @@
+.width-1200 {
+    @include desktop{
+        display: flex;
+    }
+}
 .logo {
     @include font(700, 26px, 1.19, 0.03em);
     display: block;
@@ -7,14 +12,52 @@
     color: #2196F3;
     text-decoration: none;
 }
+.footer-container {
+    @include tablet {
+        display: flex;
+    }
+}
 .end {
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #2F303A
+    background-color: #2F303A;
+}
+
+.contact-wrap {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-left: 76px;
+    } 
+}
+.contacts {
+    text-align: center;
+    @include desktop {
+        text-align: left;
+        padding-left: 120px;
+      }
+}
+.connect__link {
+    @include font(14px, 1.71, null, 0.03em);
+    color: #ffffff;
+    font-family: "roboto";
+    text-decoration: none;
+    display: inline-block;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0ms;
+    &:hover,
+    &:focus {
+      color: var(--acсent-color);
+      outline: none;
+    }
 }
 .contacts__list {
-    font-style: normal;
-}
+    margin-bottom: 60px;
+    @include desktop {
+      margin-bottom: 0;
+      margin-right: 70px;
+    }
+  }
 .contacts__item:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -55,8 +98,4 @@
 }
 .logo__logoColor {
     color: #FFFFFF;
-}
-.footer-container {
-    display: flex;
-    align-items: baseline;
 }

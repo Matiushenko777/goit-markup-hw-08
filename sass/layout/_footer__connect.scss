@@ -1,11 +1,25 @@
 .footer__connect {
-    margin-left: 70px;
+    padding-bottom: 60px;
+   @include tablet {
+    margin-left: 165px;
+    padding-top: 10px;
+   }
+   @include desktop {
+    margin-left: 30px;
+    margin-right: 70px;
+ }
 }
 .connect__text {
     @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    @include desktop {
+      justify-content: left;
+     }
+   
 }
 .connect__list {
     display: flex;
