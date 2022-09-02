@@ -56,8 +56,10 @@
     }
     @include desktop {
         width: calc((100% - 60px)/3);
-        
     }
+}
+.album-foto-list:last-child {
+  justify-content: flex-start;
 }
 .album-link {
     transition-property: box-shadow;
